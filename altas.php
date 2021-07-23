@@ -10,7 +10,7 @@ $res=sqlsrv_prepare($con,$query);
 
 
 if (sqlsrv_execute($res)){
-echo "datos insertados correctamente";
+echo "<a href='index.html'>DatosIngresadosCorrectamente</a>";
 }else{
 echo "error al insertar los datos";
 }

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#menu button{
+font-size: 18px;
+font-weight: bold;
+
+}
+
+
 :root {
 	--rojo: #E50914;
 	--fondo: #000000;
@@ -18,7 +27,8 @@ body {
 .modal{
 	width: 100%;
 	
-	background: rgba(187, 187, 187, 0.8);
+	background: rgba(201, 111, 111, 0.8);
+	color:white; 
 	position:fixed;
 	top:0;
 	left:0;
@@ -30,14 +40,16 @@ body {
 	visibility: hidden;
 	opacity: 0;
 }
+
+
 #y{
 	text-align: right;
 }
 .contenido{
 	margin: auto;
 	width:40%;
-	height: 40%;
-	background-color: rgb(41, 34, 34);
+	height: 57%;
+	background: url("https://s6.gifyu.com/images/1e13f4f495fd3e859.gif");
 	border-radius: 10px;
 }
 #cerrar{
@@ -68,6 +80,7 @@ body {
 	
 }
 
+
 #cerrar:checked + label, #cerrar:checked ~ .modal{
 	display:none;
 }
@@ -78,7 +91,12 @@ body {
 	opacity: 1;	
 	}
 }
-
+#menu{
+	width: 100%;
+	background-color: var(--fondo);
+	position: fixed;
+	color: white;
+}
 .contenedor {
 	width: 90%;
 	margin: auto;
@@ -117,7 +135,7 @@ header nav a.activo {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: rgb(255, 255, 255);
-	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://i.ytimg.com/vi/GKw4MGBL-QM/maxresdefault.jpg);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/1aff938e31865c787.jpg);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -298,5 +316,11 @@ header nav a.activo {
 		display: none;
 	}
 }
+
+
+
+
+
+
 
 
