@@ -1,0 +1,131 @@
+#menu{
+   
+    align-content: right;
+	width: 100%;
+	height: 66px;
+	background-color:rgb(35, 136, 131);
+	position: fixed;
+    box-shadow: rgb(139, 26, 26);
+	font-weight: bold;
+	color: rgb(9, 25, 170);
+	z-index:3;
+}
+#card{
+	margin-left: 10vmax;	
+width: 20vmax;
+height: 36vmax;
+}
+#text{
+	font-size: 1.1vmax;
+	font-family:cursive;
+	font-weight: bold;
+}
+
+
+:root {
+	--logotipo: #0c2872;
+	--profesion: #f2f2f2;
+	--primario: #2ed5ff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	min-height: 100vh;
+    background-image: linear-gradient(-45deg, #000000 50%, #ffffff 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+main {
+	width: 30%;
+	margin-left: 50vmax;
+	max-width: 10px;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: left;
+}
+
+.logotipo {
+	padding: 10px;
+	border: 5px solid var(--logotipo);
+	color: var(--logotipo);
+}
+
+.logotipo .subtitulo {
+	text-align: left;
+	color: var(--profesion);
+	background: var(--logotipo);
+	padding: 12px 20px;
+	transition: .7s ease all;
+	font-size: 26px;
+	font-family: 'Noto Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logotipo:hover .subtitulo {
+	background: var(--primario);
+}
+
+.texto-animado {
+	display: flex;
+	justify-content: left;
+	overflow: hidden;
+}
+
+.texto-animado > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: .3s ease all;
+}
+
+.texto-animado > div.animacion {
+	transform: translateY(-100px);
+}
+
+.texto-animado > div span {
+	font-size: 70px;
+	font-weight: normal;
+	line-height: 70px;
+}
+
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 100px;
+}
+
+@media screen and (max-width: 600px){
+	.texto-animado > div span {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.texto-animado .segunda-linea {
+		top: 50px;
+	}
+
+	.texto-animado > div.animacion {
+		transform: translateY(-50px);
+	}
+
+	.logotipo .subtitulo {
+		font-size: 20px;
+	}
+}
+#kk{
+	color:rgb(9, 25, 170)
+}

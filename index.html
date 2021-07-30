@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
-  
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-    
+    <title>Munayki Qosqo</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	
+       
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   
+	   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+   
 	<link rel="stylesheet" href="estilos.css"> 
 
 </head>
@@ -27,21 +37,22 @@
 <div class="row d-flex mt-4">
    <div class="col-12">
        <div class="text-center">
-           <h2>Insertar datos en el formulario</h2>
+           Insertar datos en el formulario
        </div>
        <div class="center-block">
-    <form class="" action="altas.php" method="post">
+    <form class="" action="altas.php" method="post" id="ju">
         <div class="form-group">
-    <label for="">Nombres</label>
-    <input  type="text"  name="Nombres" value="" class="form-control"></div>
+    <label for="" id=abur>Nombres</label>
+    <input  type="text"  name="Nombres" value="" class="form-control" id=abur></div>
     <div class="form-group">
-    <label for="">Apellidos</label>
-    <input type="text" name="Apellidos"  value=""  class="form-control"></div>
+    <label for="" id=abur>Apellidos</label>
+    <input type="text" name="Apellidos"  value=""  class="form-control" id=abur></div>
     <div class="form-group">
-    <label  for="">Correo</label>
-    <input  type="text"  name="Correo" value=""  class="form-control"></div>
-    <label  for="">Telefono</label>
-    <input  type="text"  name="Telefono" value=""  class="form-control"></div>
+    <label  for="" id=abur>Correo</label>
+    <input  type="text"  name="Correo" value=""  class="form-control" id=abur></div>
+	<div class="form-group">
+    <label  for="" id=abur>Telefono</label>
+    <input  type="text"  name="Telefono" value=""  class="form-control" id=abur></div>
     
     <input type="submit" name="" value="Guardar"  class="btn btn-success">
 
@@ -54,66 +65,52 @@
 	</div>
 </div>
 
-<!--  barra de navegacion -->
-<nav class="navbar navbar-expand-lg " id="menu">
-	<div class="container-fluid" >
-	  <a class="navbar-brand" href="index.html">
-		<h1 id="pepe">Munayki</h1>
-	  </a>
-	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<ul id="dropdown1" class="dropdown-content">
+	<div class="row"><div class="col">
+	<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">three</a></li></div><div class="col">
+		<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">three</a></li>
+	</div></div>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+	<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">three</a></li>
+  </ul>
+<nav id=menu>
+<div class="nav-wrapper">
+  <a href="#!" class="brand-logo">Munayki Qosqo</a>
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <ul class="right hide-on-med-and-down">
+	<li><a href="sass.html">Sass</a></li>
+	<li><a href="badges.html">Components</a></li>
+	<li><a href="collapsible.html">Javascript</a></li>
+	<li><a href="mobile.html">Mobile</a></li>
+	<!-- Dropdown Trigger -->
+	<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+  </ul>
+</div>
+</nav>
 
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-			</li>
-
-			<li class="nav-item">
-			  <a class="nav-link" href="#equipo">Equipo</a>
-			</li>
-
-			<li class="nav-item">
-			  <a class="nav-link" href="#contenedor-formulario">Contacto</a>
-			</li>
-			
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Variedad de productos</a>
-				<ul class="dropdown-menu  bg-dark" >
-				  <li><a href="internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
-				  <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
-				  <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
-				  <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
-				</ul>
-			</li>
-
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
-				<ul class="dropdown-menu  bg-dark" >
-				  
-				  <li><a href="#" class="dropdown-item" >facebook</a></li>
-				  <li><a href="#" class="dropdown-item" >Discucion</a></li>
-				  <li><a href="#" class="dropdown-item" >Torneos</a></li>
-				</ul>
-			</li>
-
-		  </ul>
-		<form class="d-flex">
-		  <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Email">
-		  <button class="btn btn-primary btn-primary-outline-success" type="button">Buscar</button>
-		</form>
-	  </div>
-	</div>
-
-	
-
-  </nav>
+<ul class="sidenav" id="mobile-demo">
+<li><a href="sass.html">Sass</a></li>
+<li><a href="badges.html">Components</a></li>
+<li><a href="collapsible.html">Javascript</a></li>
+<li><a href="mobile.html">Mobile</a></li>
+<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
 <br>
 <br>
 <br>
 
 
+<!--carruseles-->
     <main id=uwu>
 		<div class="pelicula-principal">
 			<div class="contenedor">
@@ -124,94 +121,540 @@
 				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
 				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
 			</div>
-		</div>
+		</div>	
 
-		<div class="peliculas-recomendadas contenedor" >
-			<div class="contenedor-titulo-controles">
-				<h3>Descubriendo un nuevo mundo: </h3>
-				<div class="indicadores"></div>
-			</div>
-
-			<div class="contenedor-principal" id="peru">
-				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-
-				<div class="contenedor-carousel" id=>
-					<div class="carousel">
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/2a46f54d2de3e4d5d.jpg" alt="" id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/36a6735108851c917.jpg" alt=""id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/4ed8306222fb5b730.jpg" alt=""id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/55a60c030ce6979be.jpg" alt=""id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/6815f9a6c6fac8c72.md.jpg" alt=""id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="https://s6.gifyu.com/images/7dd5ddd1becc21825.jpg" alt=""id="yr"></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt="" id="yr" ></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt="" id="y" ></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="estilos.css"> 
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">local_grocery_store</i> ¿Que desea comprar hoy?</h1></a>
+							<div class="carousel center-align">
+								<div class="carousel-item">
+									<h2 class="subtitulo"></h2>
+									
+									<p class="sabor"></p>
+								<img src="https://s6.gifyu.com/images/ta4.png" alt="">
+									
+								</div>
+								<div class="carousel-item">
+								<a href="regalos.html"	>	<h2 class="subtitulo">Regalos</h2>
+									<div class="linea-division"></div>
+									<p class="sabor">Vinculos</p>
+										<img src="https://s6.gifyu.com/images/2a46f54d2de3e4d5d.jpg" alt=""></a>
+								</div>
+								<div class="carousel-item">
+									<h2 class="subtitulo">Detalles</h2>
+									<div class="linea-division"></div>
+									<p class="sabor">Obsequios</p>
+									<img src="https://s6.gifyu.com/images/ta24e51e8e7f5ec35f6.jpg" alt="">
+								</div>
+								<div class="carousel-item">
+									<h2 class="subtitulo">Packs</h2>
+									<div class="linea-division"></div>
+									<p class="sabor">Complementos</p>
+									<img src="https://s6.gifyu.com/images/ta3fbe4404e758bed39.jpg" alt="">
+								</div>
+								<div class="carousel-item">
+									<h2 class="subtitulo">Pulseras</h2>
+									<div class="linea-division"></div>
+									<p class="sabor">Accesorios</p>
+									<img src="https://s6.gifyu.com/images/ta1ce21a57e77960cf3.jpg" alt="">
+								</div>
+								<div class="carousel-item">
+									<h2 class="subtitulo">Collares</h2>
+									<div class="linea-division"></div>
+									<p class="sabor">Cuarzo y mas </p>
+									<img src="https://s6.gifyu.com/images/collares.png" alt="">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-			</div>
+				
+			
 		</div>
 	</main>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">redeem</i> Regalos</h1></a>
+				
+				
+				<div class="carousel center-align">
+					<div class="carousel-item">
+						
+						<h2 class="subtitulo"></h2>
+						
+						<p class="sabor"></p>
+						<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://s6.gifyu.com/images/ta4.png">
+						
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+					
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta5aae638ad46d4b03e.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera"
+						 src="https://s6.gifyu.com/images/ta7a79073ae40a0dbe9.png">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/2a46f54d2de3e4d5d.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/7dd5ddd1becc21825.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/6815f9a6c6fac8c72.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/36a6735108851c917.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta8.jpg">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--despues de reglaso-->
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">loyalty</i> Detalles</h1></a>
+				
+				
+				<div class="carousel center-align">
+					<div class="carousel-item">
+						
+						<h2 class="subtitulo"></h2>
+						
+						<p class="sabor"></p>
+						<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://s6.gifyu.com/images/ta4.png">
+						
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+					
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta24e51e8e7f5ec35f6.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera"
+						 src="https://s6.gifyu.com/images/ta9.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta10.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta11.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta12.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta13.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta14.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta21.jpg">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">card_travel</i> Packs</h1></a>
+				
+				
+				<div class="carousel center-align">
+					<div class="carousel-item">
+						
+						<h2 class="subtitulo"></h2>
+						
+						<p class="sabor"></p>
+						<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://s6.gifyu.com/images/ta4.png">
+						
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+					
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta3fbe4404e758bed39.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera"
+						 src="https://s6.gifyu.com/images/ta15.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta16.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta17.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta18.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta19.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta20.jpg">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">donut_large</i> Pulseras</h1></a>
+				
+				
+				<div class="carousel center-align">
+					<div class="carousel-item">
+						
+						<h2 class="subtitulo"></h2>
+						
+						<p class="sabor"></p>
+						<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://s6.gifyu.com/images/ta4.png">
+						
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+					
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta22.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera"
+						 src="https://s6.gifyu.com/images/ta23.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta24.png">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta25.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta26.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta27.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta28.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta29.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta30.jpg">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<a href="#!" class="brand-logo"><h1 class="center-align titulo" id="ae"><i class="material-icons" id="ico">favorite</i> Collares</h1></a>
+				
+				
+				<div class="carousel center-align">
+					<div class="carousel-item">
+						
+						<h2 class="subtitulo"></h2>
+						
+						<p class="sabor"></p>
+						<img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://s6.gifyu.com/images/ta4.png">
+						
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+					
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/collares.png">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera"
+						 src="https://s6.gifyu.com/images/ta31.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" 
+						 src="https://s6.gifyu.com/images/ta32.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta33.jpg">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta35.png">
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta34.jpg">
+						
+					</div>
+					<div class="carousel-item">
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						
+						<div class="linea-division"></div>
+						
+						<img class="materialboxed" data-caption="Personalice sus regalos como usted quiera" width="250" 
+						src="https://s6.gifyu.com/images/ta36.jpg">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="slider" id="turu">
+			<ul class="slides">
+			  <li>
+				<img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+				<div class="caption center-align">
+				  <h3>This is our big Tagline!</h3>
+				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			  </li>
+			  <li>
+				<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+				<div class="caption left-align">
+				  <h3>Left Aligned Caption</h3>
+				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			  </li>
+			  <li>
+				<img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+				<div class="caption right-align">
+				  <h3>Right Aligned Caption</h3>
+				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			  </li>
+			  <li>
+				<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+				<div class="caption center-align">
+				  <h3>This is our big Tagline!</h3>
+				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+			  
+	
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	
+
+
+	
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       
      
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
 	<script src="main.js"></script>
 </body>
 </html>
