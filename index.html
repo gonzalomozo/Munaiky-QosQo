@@ -22,7 +22,32 @@
    
 	<link rel="stylesheet" href="estilos.css"> 
 
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJg-R8vV1wgN3gGbr-3_S0aWx-t5C_xLY",
+    authDomain: "registrousuario-7d92f.firebaseapp.com",
+    projectId: "registrousuario-7d92f",
+    storageBucket: "registrousuario-7d92f.appspot.com",
+    messagingSenderId: "689774370319",
+    appId: "1:689774370319:web:0f67fe41005111d00ecd7a",
+    measurementId: "G-STV5Y0TBRJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </head>
+
 <body>
 
 
@@ -43,18 +68,19 @@
     <form class="" action="altas.php" method="post" id="ju">
         <div class="form-group">
     <label for="" id=abur>Nombres</label>
-    <input  type="text"  name="Nombres" value="" class="form-control" id=abur></div>
+    <input  type="text"  name="Nombres" value="" class="form-control text-primary" id=abur></div>
     <div class="form-group">
     <label for="" id=abur>Apellidos</label>
-    <input type="text" name="Apellidos"  value=""  class="form-control" id=abur></div>
+    <input type="text" name="Apellidos"  value=""  class="form-control text-primary" id=abur></div>
     <div class="form-group">
     <label  for="" id=abur>Correo</label>
-    <input  type="text"  name="Correo" value=""  class="form-control" id=abur></div>
+    <input  type="Email"  name="Correo" value=""  class="form-control text-primary" id=email></div>
 	<div class="form-group">
-    <label  for="" id=abur>Telefono</label>
-    <input  type="text"  name="Telefono" value=""  class="form-control" id=abur></div>
+    <label  for="" id=abur>Contraseña</label>
+    <input  type="password"  name="Telefono" value=""  class="form-control text-primary" id=contrasena></div>
     
-    <input type="submit" name="" value="Guardar"  class="btn btn-success">
+
+    <input type="button" name="" value="Guardar"  class="btn btn-success " onclick="registrar()" >
 
     </form>
  
@@ -67,47 +93,50 @@
 
 <ul id="dropdown1" class="dropdown-content">
 	<div class="row"><div class="col">
-	<li><a href="#!">one</a></li>
-	<li><a href="#!">two</a></li>
+	<li><a href="rompe.html">Promocion1</a></li>
+	<li><a href="#!"></a></li>
 	<li class="divider"></li>
-	<li><a href="#!">three</a></li></div><div class="col">
-		<li><a href="#!">one</a></li>
-	<li><a href="#!">two</a></li>
+	<li><a href="#!"></a></li></div><div class="col">
+		<li><a href="#!"></a></li>
+	<li><a href="#!"></a></li>
 	<li class="divider"></li>
-	<li><a href="#!">three</a></li>
+	<li><a href="#!"></a></li>
 	</div></div>
   </ul>
   <ul id="dropdown2" class="dropdown-content">
-	<li><a href="#!">one</a></li>
-	<li><a href="#!">two</a></li>
+	<li><a href="rompe.html">Promoción1</a></li>
+	<li><a href="#!"></a></li>
 	<li class="divider"></li>
-	<li><a href="#!">three</a></li>
+	<li><a href="#!"></a></li>
   </ul>
 <nav id=menu>
 <div class="nav-wrapper">
-  <a href="#!" class="brand-logo">Munayki Qosqo</a>
-  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	<a href="index.html" class="brand-logo" id="pepa">Munayki Qosqo ..<span>&#160;</span></a>
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger btn-floating pulse"><i class="material-icons">menu</i></a>
   <ul class="right hide-on-med-and-down">
-	<li><a href="sass.html">Sass</a></li>
-	<li><a href="badges.html">Components</a></li>
-	<li><a href="collapsible.html">Javascript</a></li>
-	<li><a href="mobile.html">Mobile</a></li>
+	<li><a href="index.html" id="pepa">Inicio</a></li>
+	<li><a href="sass.html" id="pepa"><img src="I.png" id="ioi"></a></li>
+	<li><a href="https://www.facebook.com/Munayki-Qosqo-963471254044223" ><img src="f.png" id="ioi"></a></li>
+	<li><a href="./htmlProducto/molde.html" id="pepa">Productos</a></li>
 	<!-- Dropdown Trigger -->
-	<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+	<li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="pepa">Promociones<i class="material-icons right">arrow_drop_down</i></a></li>
   </ul>
 </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-<li><a href="sass.html">Sass</a></li>
-<li><a href="badges.html">Components</a></li>
-<li><a href="collapsible.html">Javascript</a></li>
-<li><a href="mobile.html">Mobile</a></li>
-<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="sass.html"><img src="I.png" id="ioi"></a></li>
+	<li><a href="https://www.facebook.com/Munayki-Qosqo-963471254044223"><img src="f.png" id="ioi"></a></li>
+<li><a href="./htmlProducto/molde.html">Productos</a></li>
+<li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Promocionws<i class="material-icons right">arrow_drop_down</i></a></li>
 </ul>
 <br>
 <br>
 <br>
+
+
+
 
 
 <!--carruseles-->
@@ -146,28 +175,28 @@
 										<img src="https://s6.gifyu.com/images/2a46f54d2de3e4d5d.jpg" alt=""></a>
 								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo">Detalles</h2>
+									<a href="detalles.html"	><h2 class="subtitulo">Detalles</h2>
 									<div class="linea-division"></div>
 									<p class="sabor">Obsequios</p>
-									<img src="https://s6.gifyu.com/images/ta24e51e8e7f5ec35f6.jpg" alt="">
+									<img src="https://s6.gifyu.com/images/ta24e51e8e7f5ec35f6.jpg" alt=""></a>	
 								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo">Packs</h2>
+									<a href="packs.html"	>	<h2 class="subtitulo">Packs</h2>
 									<div class="linea-division"></div>
 									<p class="sabor">Complementos</p>
-									<img src="https://s6.gifyu.com/images/ta3fbe4404e758bed39.jpg" alt="">
+									<img src="https://s6.gifyu.com/images/ta3fbe4404e758bed39.jpg" alt=""></a>
 								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo">Pulseras</h2>
+									<a href="pulseras.html"	>	<h2 class="subtitulo">Pulseras</h2>
 									<div class="linea-division"></div>
 									<p class="sabor">Accesorios</p>
-									<img src="https://s6.gifyu.com/images/ta1ce21a57e77960cf3.jpg" alt="">
+									<img src="https://s6.gifyu.com/images/ta1ce21a57e77960cf3.jpg" alt=""></a>
 								</div>
 								<div class="carousel-item">
-									<h2 class="subtitulo">Collares</h2>
+									<a href="collares.html"	>	<h2 class="subtitulo">Collares</h2>
 									<div class="linea-division"></div>
 									<p class="sabor">Cuarzo y mas </p>
-									<img src="https://s6.gifyu.com/images/collares.png" alt="">
+									<img src="https://s6.gifyu.com/images/collares.png" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -177,7 +206,42 @@
 			
 		</div>
 	</main>
+<!--carrusel promocion-->
+<div class="slider" id="turu">
+	<ul class="slides">
+	  <li>
+		<img src="https://s6.gifyu.com/images/AGOSTO.png"> <!-- random image -->
+		<div class="caption center-align">
+		  <h3 id="uu">Munayki-Qosqo </h3>
+		  <h5 id="uu" class="light " >A la orden de la gente</h5>
+		</div>
+	  </li>
+	  <li>
+		<img id="juj" src="https://s6.gifyu.com/images/rre.png"> <!-- random image -->
+		<div class="caption left-align">
+		  <h3 id="uu">Munayki-Qosqo</h3>
+		  <h5  id="uu" class="light ">A la orden de la gente</h5>
+		</div>
+	  </li>
+	  <li>
+		<img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+		<div class="caption right-align">
+		  <h3>Right Aligned Caption</h3>
+		  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		</div>
+	  </li>
+	  <li>
+		<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+		<div class="caption center-align">
+		  <h3>This is our big Tagline!</h3>
+		  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+		</div>
+	  </li>
+	</ul>
+  </div>
 
+
+  
 	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -195,7 +259,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/molde.html">Pulse para mas info</a></button>
 					
 						<div class="linea-division"></div>
 						
@@ -203,7 +267,7 @@
 						 src="https://s6.gifyu.com/images/ta5aae638ad46d4b03e.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/a.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -211,7 +275,7 @@
 						 src="https://s6.gifyu.com/images/ta7a79073ae40a0dbe9.png">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/b.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -219,7 +283,7 @@
 						 src="https://s6.gifyu.com/images/2a46f54d2de3e4d5d.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/c.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -227,7 +291,7 @@
 						src="https://s6.gifyu.com/images/7dd5ddd1becc21825.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/d.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -235,7 +299,7 @@
 						src="https://s6.gifyu.com/images/6815f9a6c6fac8c72.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/e.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -244,7 +308,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/f.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -274,7 +338,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/g.html">Pulse para mas info</a></button>
 					
 						<div class="linea-division"></div>
 						
@@ -282,7 +346,7 @@
 						 src="https://s6.gifyu.com/images/ta24e51e8e7f5ec35f6.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/h.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -290,7 +354,7 @@
 						 src="https://s6.gifyu.com/images/ta9.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/i.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -298,7 +362,7 @@
 						 src="https://s6.gifyu.com/images/ta10.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/j.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -306,7 +370,7 @@
 						src="https://s6.gifyu.com/images/ta11.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/k.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -314,7 +378,7 @@
 						src="https://s6.gifyu.com/images/ta12.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/l.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -323,7 +387,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/m.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -332,7 +396,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/n.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -363,7 +427,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/o.html">Pulse para mas info</a></button>
 					
 						<div class="linea-division"></div>
 						
@@ -371,7 +435,7 @@
 						 src="https://s6.gifyu.com/images/ta3fbe4404e758bed39.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/aa.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -379,7 +443,7 @@
 						 src="https://s6.gifyu.com/images/ta15.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/p.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -387,7 +451,7 @@
 						 src="https://s6.gifyu.com/images/ta16.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/r.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -395,7 +459,7 @@
 						src="https://s6.gifyu.com/images/ta17.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/q.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -403,7 +467,7 @@
 						src="https://s6.gifyu.com/images/ta18.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/s.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -412,7 +476,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/t.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -443,7 +507,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/u.html">Pulse para mas info</a></button>
 					
 						<div class="linea-division"></div>
 						
@@ -451,7 +515,7 @@
 						 src="https://s6.gifyu.com/images/ta22.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/v.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -459,7 +523,7 @@
 						 src="https://s6.gifyu.com/images/ta23.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/w.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -467,7 +531,7 @@
 						 src="https://s6.gifyu.com/images/ta24.png">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/x.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -475,7 +539,7 @@
 						src="https://s6.gifyu.com/images/ta25.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/y.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -483,7 +547,7 @@
 						src="https://s6.gifyu.com/images/ta26.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/z.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -492,7 +556,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ab.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -501,7 +565,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ac.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -510,7 +574,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ad.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -540,7 +604,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ae.html">Pulse para mas info</a></button>
 					
 						<div class="linea-division"></div>
 						
@@ -548,7 +612,7 @@
 						 src="https://s6.gifyu.com/images/collares.png">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/af.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -556,7 +620,7 @@
 						 src="https://s6.gifyu.com/images/ta31.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ag.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -564,7 +628,7 @@
 						 src="https://s6.gifyu.com/images/ta32.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ah.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -572,7 +636,7 @@
 						src="https://s6.gifyu.com/images/ta33.jpg">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ai.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -580,7 +644,7 @@
 						src="https://s6.gifyu.com/images/ta35.png">
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/aj.html">Pulse para mas info</a></button>
 						
 						<div class="linea-division"></div>
 						
@@ -589,7 +653,7 @@
 						
 					</div>
 					<div class="carousel-item">
-						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i>Pulse para mas info</button>
+						<button role="button" class="boton" id="tt"><i class="fas fa-info-circle"></i><a href="./htmlProducto/ak.html"></a>Pulse para mas info</button>
 						
 						<div class="linea-division"></div>
 						
@@ -603,38 +667,32 @@
 	</div>
 
 
-		<div class="slider" id="turu">
-			<ul class="slides">
-			  <li>
-				<img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-				<div class="caption center-align">
-				  <h3>This is our big Tagline!</h3>
-				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			  </li>
-			  <li>
-				<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-				<div class="caption left-align">
-				  <h3>Left Aligned Caption</h3>
-				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			  </li>
-			  <li>
-				<img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-				<div class="caption right-align">
-				  <h3>Right Aligned Caption</h3>
-				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			  </li>
-			  <li>
-				<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-				<div class="caption center-align">
-				  <h3>This is our big Tagline!</h3>
-				  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				</div>
-			  </li>
-			</ul>
+	<footer class="page-footer" id="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="col l6 s12">
+			  <h3 class="" id="fter">Munayqui Qosqo</h3>
+			  <p class=" text-lighten-4" id="foter">Puede contactarnos llamando al siguiente numero, o accediendo a los links del lado derecho <br> Numero: 941435212</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+			  <h5 class="" id="foter">Links</h5>
+			  <ul>
+				<li id="foter"><a class="text-lighten-3" href="https://www.facebook.com/Munayki-Qosqo-963471254044223" id="wuuu">Facebook  ♣ ♣ ♣ ♣ <img src="fb.png" id="imgg"></a></li>
+				<li id="foter"><a class=" text-lighten-3" href="https://www.instagram.com/munaykiqosqo/" id="wuuu">Instagram    ♣ ♣ ♣ ♣<img src="ins.png" id="imgg"></a></li>
+				<li id="foter"><a class=" text-lighten-3" href="#!">+51 931831762         ♣ <img src="wpp.png" id="imgg" id="wuuu"></a></li>
+				<li id="foter"><a class=" text-lighten-3" href="#!">+51 931831762       ♣ <img src="tele.png" id="imgg" id="wuuu"></a></li>
+			  </ul>
+			</div>
 		  </div>
+		</div>
+		<div class="footer-copyright">
+		  <div class="container" id="foter">
+		  © 2019 Copyright Text
+		  <a class=" text-lighten-4 right "id="foter" href="#!">More Links</a>
+		  </div>
+		</div>
+	  </footer>
+		  
 			  
 	
 	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
@@ -653,8 +711,12 @@
    
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
+	
 	<script src="js/init.js"></script>
 
 	<script src="main.js"></script>
+<script src="./js/firebase.js"></script>
+
+
 </body>
 </html>
