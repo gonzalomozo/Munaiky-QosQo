@@ -181,3 +181,11 @@ height: 44vmax;
 		width: 2vmax;	
 		height: 2vmax;
 		}
+		@media screen and (max-width: 700px){
+			#pepa{
+			font-size: 3vmax;
+		}}
+		@media screen and (max-width: 400px){
+			#pepa{
+			font-size: 2vmax;
+		}}
