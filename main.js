@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     const elementosCarousel= document.querySelectorAll('.carousel');
     M.Carousel.init(elementosCarousel,{
         duration: 700,
-        dist: 0,
+        dist: -30,
         shift: 5,   
-        padding: 5,
+        padding: 50,
         numVisible: 5,
 		
         indicators: true,

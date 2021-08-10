@@ -9,7 +9,7 @@ font-weight: bold;
 
 :root {
 	--rojo: #E50914;
-	--fondo: #79f1eb;
+	--fondo: rgb(16, 51, 51);
 }
 
 * {
@@ -20,7 +20,7 @@ font-weight: bold;
 
 
 body {
-	background:   url("https://s6.gifyu.com/images/1e13f4f495fd3e859.gif");
+	background-image: linear-gradient(-90deg, #0f2930 50%, #000000 50%);
  
 	font-family: 'Open Sans', sans-serif;
 
@@ -397,3 +397,7 @@ background-color: rgb(255, 253, 113);
 	#pepa{
 	font-size: 2vmax;
 }}
+#pepa{
+color: rgb(255, 255, 255);
+text-shadow: none;
+}
